@@ -9,7 +9,7 @@ class Editor extends Component {
             value: ''
         }
 
-        this.handleChange = this.handleChange.bind(this);
+        // this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange(e) {
@@ -23,7 +23,7 @@ class Editor extends Component {
             <div className='container'>
                 <div>
                     <h3>Input</h3>
-                    <textarea onChange={this.handleChange}></textarea>
+                    <textarea onChange={(e) => { this.handleChange(e) }}></textarea>
                 </div>
                 <div>
                     <h3>Pro Note</h3>
